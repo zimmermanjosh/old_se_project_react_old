@@ -1,26 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+import Header from "./Header/Header";
+//import InterModal from "./InterModal/InterModal";
+//import logo from "./logo.svg";
 function App() {
   return (
     <div>
-      <header className="header">
-        <div className="header__logo">
+      <Header />
+      <main>
+        <section id="weather">
+          weather
+          <div>75F</div>
           <div>
-            <img src="/images/logo.svg" alt="logo"></img>
+            <img />
           </div>
-          <div>date</div>
-        </div>
-        <div className="header__avatar-logo">
-          <div>
-            <button type="text"> add new clothes</button>
-          </div>
-          <div>name</div>
-          <div>
-            <img src="/images/avatar.svg" alt="avatar"></img>
-          </div>
-        </div>
-      </header>
+        </section>
+        <section id="card-section">card-section</section>
+      </main>
     </div>
   );
 }
