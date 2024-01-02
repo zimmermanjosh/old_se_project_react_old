@@ -6,13 +6,14 @@ function App() {
   return (
     <div>
       <Header />
-      <main>
-        <section id="weather">
-          weather
-          <div>75F</div>
-          <div>
-            <img />
-          </div>
+      <main className="main">
+        <section className="weather" id="weather">
+          <div className="weather_info">75F</div>
+          <img
+            src="/images/day/sunny.svg"
+            alt="sunny"
+            className="weather_image"
+          />
         </section>
         <section id="card-section">card-section</section>
       </main>
