@@ -1,4 +1,6 @@
 import "./Header.css";
+import DateTime from "./DateTime.js";
+
 const Header = () => {
   console.log("Header");
 
@@ -8,7 +10,9 @@ const Header = () => {
         <div>
           <img src="/images/logo.svg" alt="logo"></img>
         </div>
-        <div>date</div>
+        <div>
+          <DateTime />
+        </div>
       </div>
       <div className="header__avatar-logo">
         <div>
