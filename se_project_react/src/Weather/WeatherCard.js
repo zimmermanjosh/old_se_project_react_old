@@ -1,18 +1,42 @@
 import "./WeatherCard.css";
 
 const WeatherOptions = [
-  { url: "/images/images/day/cloudy.svg", day: true, type: "cloudy" },
-  { url: "/images/day/fog.svg", day: true, type: "fog" },
-  { url: "/images/day/rain.svg", day: true, type: "rain" },
-  { url: "/images/day/snow.svg", day: true, type: "snow" },
-  { url: "/images/day/storm.svg", day: true, type: "storm" },
-  { url: "/images/day/sunny.svg", day: true, type: "sunny" },
-  { url: "/images/night/clear_sunny.svg", day: false, type: "clear_sunny" },
-  { url: "/images/night/cloudy.svg", day: false, type: "cloudy" },
-  { url: "/images/night/fog.svg", day: false, type: "fog" },
-  { url: "/images/night/rain.svg", day: false, type: "rain" },
-  { url: "/images/night/snow.svg", day: false, type: "snow" },
-  { url: "/images/night/storm.svg", day: false, type: "storm" },
+  {
+    url: require("../images/images/day/cloudy.svg").default,
+    day: true,
+    type: "cloudy",
+  },
+  { url: require("../images/day/fog.svg").default, day: true, type: "fog" },
+  { url: require("../images/day/rain.svg").default, day: true, type: "rain" },
+  { url: require("../images/day/snow.svg").default, day: true, type: "snow" },
+  { url: require("../images/day/storm.svg").default, day: true, type: "storm" },
+  { url: require("../images/day/sunny.svg").default, day: true, type: "sunny" },
+  {
+    url: require("../images/night/clear_sunny.svg").default,
+    day: false,
+    type: "clear_sunny",
+  },
+  {
+    url: require("../images/night/cloudy.svg").default,
+    day: false,
+    type: "cloudy",
+  },
+  { url: require("../images/night/fog.svg").default, day: false, type: "fog" },
+  {
+    url: require("../images/night/rain.svg").default,
+    day: false,
+    type: "rain",
+  },
+  {
+    url: require("../images/night/snow.svg").default,
+    day: false,
+    type: "snow",
+  },
+  {
+    url: require("../images/night/storm.svg").default,
+    day: false,
+    type: "storm",
+  },
 ];
 
 const WeatherCard = ({ day, type }) => {
