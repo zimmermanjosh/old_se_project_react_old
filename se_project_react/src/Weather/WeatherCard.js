@@ -2,7 +2,7 @@ import "./WeatherCard.css";
 
 const WeatherOptions = [
   {
-    url: require("../images/images/day/cloudy.svg").default,
+    url: require("../images/day/cloudy.svg").default,
     day: true,
     type: "cloudy",
   },
