@@ -5,9 +5,8 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div>
-        <p className="footer__copyright">© 2024 Joshua Zimmerman</p>
-      </div>
+      <div>Developed by Practicum Students</div>
+      <div>© 2024 Joshua Zimmerman</div>
     </footer>
   );
 };

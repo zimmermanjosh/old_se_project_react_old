@@ -10,7 +10,7 @@ function App() {
     <div>
       <Header />
       <Main weatherTemp={weatherTemp} />
-      <Footer className="footer" />
+      <Footer />
     </div>
   );
 }
