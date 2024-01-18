@@ -10,17 +10,12 @@ const ModalWithForm = ({
   console.log("ModalWithForm");
 
   return (
-    <div>
-      <div className={`modal modal_type_${name}`} />
+    <div className={`modal modal_type_${name}`}>
       <div className="modal__content">
-        <button type="button" onClick={onclose}>
-          {" "}
-        </button>
+        <button type="button" onClick={onclose}></button>
         <h3>{title}</h3>
         <form>{children}</form>
-        <button type="submit" onClick={() => console.log("Clicked_Submit")}>
-          {buttonText}
-        </button>
+        <button type="submit"> {buttonText} </button>
       </div>
     </div>
   );
