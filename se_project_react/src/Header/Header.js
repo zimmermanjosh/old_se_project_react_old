@@ -1,7 +1,7 @@
 import "./Header.css";
 import DateTime from "./DateTime.js";
 
-const Header = () => {
+const Header = ({ onCreateModal }) => {
   console.log("Header");
 
   return (
@@ -19,7 +19,9 @@ const Header = () => {
       </div>
       <div className="header__avatar-logo">
         <div>
-          <button type="text"> add new clothes</button>
+          <button type="text" onClick={onCreateModal}>
+            add new clothes
+          </button>
         </div>
         <div>name</div>
         <div>
