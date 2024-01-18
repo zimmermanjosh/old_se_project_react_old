@@ -1,25 +1,19 @@
-.header {
-  background-color: lightgreen;
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  min-height: 60px;
-  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header__logo {
+.modal__content {
   display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.header__avatar-logo {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.header__dateTime {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  background-color: white;
+  max-width: 496px;
+  width: 100%;
+  padding: 34px 36px;
 }

@@ -8,8 +8,8 @@ function Main({ weatherTemp }) {
       <section className="card_section" id="card-section">
         Today is {weatherTemp} , Dallas, Tx / You may want to wear:
         <div className="card_items">
-          {defaultClothingItems.map((item) => (
-            <ItemCard item={item} />
+          {defaultClothingItems.map((item, index) => (
+            <ItemCard key={index} item={item} />
           ))}
         </div>
       </section>
