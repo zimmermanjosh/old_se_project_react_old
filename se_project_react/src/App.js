@@ -5,6 +5,7 @@ import Main from "./Main/Main.js";
 import ModalWithForm from "./ModalWithForm/ModalWithForm.js";
 import { useState } from "react";
 import ItemModal from "./ItemModal/ItemModal.js";
+import { getForecastWeather } from "./Utils/WeatherApi.js";
 function App() {
   const weatherTemp = "87°F";
   const [activeModal, setActiveModal] = useState("");
@@ -24,6 +25,13 @@ function App() {
   };
 
   console.log(selectedCard);
+  // eslint-disable-next-line no-unused-vars
+  useEffect(() => {
+    getForecastWeather().then((data) => {
+      console.log(data);
+    });
+  }, []);
+  // eslint-disable-next-line no-unused-vars
 
   //const currentLocation = { Location };
   return (
