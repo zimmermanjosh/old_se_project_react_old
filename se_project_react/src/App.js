@@ -3,13 +3,14 @@ import Header from "./Header/Header.js";
 import Footer from "./Footer/Footer.js";
 import Main from "./Main/Main.js";
 import ModalWithForm from "./ModalWithForm/ModalWithForm.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ItemModal from "./ItemModal/ItemModal.js";
-import { getForecastWeather } from "./Utils/WeatherApi.js";
+import { getForecastWeather, parseWeatherData } from "./Utils/WeatherApi.js";
 function App() {
   const weatherTemp = "87°F";
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
+  const [temp, setTemp] = useState(0);
 
   const handleCreateModal = () => {
     setActiveModal("create");
@@ -25,19 +26,21 @@ function App() {
   };
 
   console.log(selectedCard);
-  // eslint-disable-next-line no-unused-vars
+
   useEffect(() => {
     getForecastWeather().then((data) => {
-      console.log(data);
+      const temperature = parseWeatherData(data);
+      console.log(temperature);
+      setTemp(temperature);
     });
   }, []);
-  // eslint-disable-next-line no-unused-vars
+  console.log(temp);
 
   //const currentLocation = { Location };
   return (
     <div>
-      <Header onCreateModal={handleCreateModal} />
-      <Main weatherTemp={weatherTemp} onSelectedCard={handleSelectedCard} />
+      <Header onCreateModal={handleCreateModal} temp={temp} />
+      <Main weatherTemp={temp} onSelectedCard={handleSelectedCard} />
       <Footer />
       {activeModal === "create" && (
         <ModalWithForm title="New Garment" onClose={handleCloseModal}>
