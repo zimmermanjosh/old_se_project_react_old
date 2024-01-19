@@ -25,6 +25,15 @@ export const parseWeatherData = (data) => {
   const weatherTemp = weatherMain && weatherMain.temp;
   console.log("!!weatherMain:", Math.ceil(weatherTemp));
   return Math.ceil(weatherTemp);
+
+  // Get the weather description based on the condition ID or use a default description
+  const weatherDescription =
+    weatherDescriptions[weatherId] || "Unknown Weather";
+
+  return {
+    temperature: Math.ceil(weatherTemp),
+    description: weatherDescription,
+  };
 };
 
 const response = {
