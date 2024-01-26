@@ -23,3 +23,8 @@
   gap: 20px;
   align-items: center;
 }
+
+.header__name {
+  display: flex;
+  color: black;
+}
