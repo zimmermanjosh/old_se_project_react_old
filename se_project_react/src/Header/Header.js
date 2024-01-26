@@ -13,8 +13,6 @@ const Header = ({ onCreateModal }) => {
         // Retrieve the latitude and longitude from the position object
         const { latitude, longitude } = position.coords;
 
-        // You can use a reverse geocoding service to get the city and state
-        // Replace 'YOUR_API_KEY' with your actual OpenCage Geocoder API key
         fetch(
           `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=20740fa69bd84624bf45f4a801ef40c3`,
         )
@@ -22,8 +20,6 @@ const Header = ({ onCreateModal }) => {
           .then((data) => {
             const city = data.results[0].components.city;
             const state = data.results[0].components.state;
-
-            // Update the location state with the city and state
             setLocation(`${city}, ${state}`);
           })
           .catch((error) => {
@@ -51,8 +47,12 @@ const Header = ({ onCreateModal }) => {
       </div>
       <div className="header__avatar-logo">
         <div>
-          <button type="text" onClick={onCreateModal}>
-            add new clothes
+          <button
+            type="text"
+            onClick={onCreateModal}
+            className="header__clothes-button"
+          >
+            + add clothes
           </button>
         </div>
         <div className="header__name">what's my name</div>

@@ -28,3 +28,11 @@
   display: flex;
   color: black;
 }
+
+.header__clothes-button {
+  background-color: lightgreen;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
