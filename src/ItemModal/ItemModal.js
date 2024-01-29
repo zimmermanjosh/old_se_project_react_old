@@ -1,3 +1,5 @@
+import "./itemModal.css";
+
 const ItemModal = ({ selectedCard, onClose }) => {
   console.log("ItemModal");
 
@@ -7,7 +9,7 @@ const ItemModal = ({ selectedCard, onClose }) => {
         <button
           type="button"
           onClick={onClose}
-          className="modal__close-button"
+          className="preview__close-button"
         ></button>
         <img alt={selectedCard.name} src={selectedCard.link} />
         <div className="modal__item-name"> {selectedCard.name} </div>

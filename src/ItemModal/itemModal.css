@@ -5,7 +5,7 @@
   position: absolute;
 }
 
-.modal__close-button {
+.preview__close-button {
   border: none;
   background-image: url(../images/modal/close.svg);
   background-size: contain;
