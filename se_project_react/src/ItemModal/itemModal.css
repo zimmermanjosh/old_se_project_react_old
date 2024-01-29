@@ -1,11 +1,11 @@
 .modal {
-  font-family: "Cabinet Grotesk", sans-serif;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   position: absolute;
 }
 
-.preview_close-btn {
+.modal__close-button {
   border: none;
   background-image: url(../images/modal/close.svg);
   background-size: contain;

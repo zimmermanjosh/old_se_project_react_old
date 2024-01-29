@@ -1,10 +1,10 @@
 .modal {
-  position: fixed;
+  display: flex;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -40,7 +40,7 @@
   cursor: pointer;
   opacity: 0.6;
 }
-.submit_button {
+.submit__button {
   height: 36px;
   width: 124px;
   background-color: black;
@@ -48,10 +48,10 @@
   border-radius: 5px;
 }
 
-.submit_button:hover {
+.submit__button:hover {
   background-color: gray;
   cursor: pointer;
 }
-.submit_button:disabled {
+.submit__button:disabled {
   background-color: lightgray;
 }

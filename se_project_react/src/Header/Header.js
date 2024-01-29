@@ -55,7 +55,7 @@ const Header = ({ onCreateModal }) => {
             + add clothes
           </button>
         </div>
-        <div className="header__name">what's my name</div>
+        <div className="header__name">Joshua Zimmerman</div>
         <div>
           <img
             src={require("../images/dashboard/avatar.svg").default}

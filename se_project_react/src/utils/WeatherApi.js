@@ -1,8 +1,11 @@
 //key 9ed2af8b44ccce6e0959621de59c2764
 //api https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}
 
-const longitude = 12.9833;
-const latitude = 77.6167;
+//const longitude = 12.9833;
+//const latitude = 77.6167;
+
+const latitude = 32.779167;
+const longitude = -96.80889;
 const APIkey = "9ed2af8b44ccce6e0959621de59c2764";
 const apiRequest = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${APIkey}`;
 
@@ -38,8 +41,8 @@ export const parseWeatherData = (data) => {
 
 const response = {
   coord: {
-    lon: 12.9833,
-    lat: 77.6167,
+    lon: 96.797,
+    lat: 32.779167,
   },
   weather: [
     {
