@@ -7,7 +7,7 @@
 
 .preview__close-button {
   border: none;
-  background-image: url(../images/modal/close.svg);
+  background-image: url(../../images/modal/close.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
