@@ -1,5 +1,5 @@
 import "./WeatherCard.css";
-import { WeatherOptions } from "../Utils/Constants.js";
+import { WeatherOptions } from "../../utils/Constants.js";
 
 const WeatherCard = ({ day, type, weatherTemp }) => {
   // console.log("weather card");
