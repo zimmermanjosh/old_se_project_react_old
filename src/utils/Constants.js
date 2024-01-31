@@ -1,4 +1,4 @@
-const defaultClothingItems = [
+export const defaultClothingItems = [
   {
     _id: 0,
     name: "Cap",
@@ -37,9 +37,7 @@ const defaultClothingItems = [
   },
 ];
 
-export default defaultClothingItems;
-
-export const WeatherOptions = [
+export const weatherOptions = [
   {
     url: require("../images/day/cloudy.svg").default,
     day: true,
