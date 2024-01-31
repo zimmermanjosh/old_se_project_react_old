@@ -1,6 +1,7 @@
 import "./Header.css";
-import DateTime from "./DateTime.js";
+import DateTime from "../DateTime/DateTime.js";
 import React, { useState, useEffect } from "react";
+import avatarImage from "../../images/dashboard/logo.svg";
 
 const Header = ({ onCreateModal }) => {
   console.log("Header");
@@ -35,10 +36,7 @@ const Header = ({ onCreateModal }) => {
     <header className="header">
       <div className="header__logo">
         <div>
-          <img
-            src={require("../../images/dashboard/logo.svg").default}
-            alt="logo"
-          ></img>
+          <img src={avatarImage} alt="logo"></img>
         </div>
         <div>
           <DateTime />
@@ -57,10 +55,7 @@ const Header = ({ onCreateModal }) => {
         </div>
         <div className="header__name">Joshua Zimmerman</div>
         <div>
-          <img
-            src={require("../../images/dashboard/avatar.svg").default}
-            alt="avatar"
-          ></img>
+          <img src={avatarImage} alt="avatar"></img>
         </div>
       </div>
     </header>

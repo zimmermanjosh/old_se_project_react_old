@@ -55,11 +55,20 @@ function App() {
                 type="text"
                 minLength={1}
                 maxLength={23}
+                name="name"
+                placeholder="Name"
               />
             </label>
             <label className="modal__input-label">
               image
-              <input className="modal__input" type="link" minLength={1} />
+              <input
+                className="modal__input"
+                minLength={1}
+                type="url"
+                name="link"
+                placeholder="Image URL"
+                onChange={(input) => handleOnChange(input.target.value)}
+              />
             </label>
             <p>Select the weather type</p>
             <div className="weather_selector">
@@ -67,6 +76,7 @@ function App() {
                 <input
                   className="input__button"
                   type="radio"
+                  name="weather"
                   id="hot"
                   value="hot"
                 />
@@ -78,6 +88,7 @@ function App() {
                   type="radio"
                   id="warm"
                   value="warm"
+                  name="weather"
                 />
                 <label> warm </label>
               </div>
@@ -85,6 +96,7 @@ function App() {
                 <input
                   className="input__button"
                   type="radio"
+                  name="weather"
                   id="cold"
                   value="cold"
                 />
