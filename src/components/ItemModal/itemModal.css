@@ -17,3 +17,7 @@
   top: 24px;
   right: 24px;
 }
+
+.preview__close-button:hover {
+  cursor: pointer;
+}
