@@ -14,6 +14,7 @@ function App() {
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState(0);
+  const [image, setImage] = useState("");
 
   const handleCreateModal = () => {
     setActiveModal("create");
