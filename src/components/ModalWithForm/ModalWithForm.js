@@ -1,4 +1,4 @@
-import "./ModalWithForm.css";
+import "../ModalWithForm/ModalWithForm.css";
 
 const ModalWithForm = ({ children, buttonText, title, onClose, name }) => {
   console.log("ModalWithForm");
@@ -14,10 +14,10 @@ const ModalWithForm = ({ children, buttonText, title, onClose, name }) => {
         <h3>{title}</h3>
         <form className="modal__form" buttonText="Add garment">
           {children}
+          <button type="submit" className="submit__button">
+            {buttonText}
+          </button>
         </form>
-        <button type="submit" className="submit__button">
-          {buttonText}
-        </button>
       </div>
     </div>
   );
