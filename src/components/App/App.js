@@ -14,6 +14,12 @@ function App() {
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState(0);
+  const [image, setImage] = useState("");
+
+  const handleOnChange = (imageValue) => {
+    console.log("imageValue", imageValue);
+    setImage(imageValue);
+  };
 
   const handleCreateModal = () => {
     setActiveModal("create");
@@ -31,11 +37,15 @@ function App() {
   console.log(selectedCard);
 
   useEffect(() => {
-    getForecastWeather().then((data) => {
-      const temperature = parseWeatherData(data);
-      console.log(temperature);
-      setTemp(temperature);
-    });
+    getForecastWeather()
+      .then((data) => {
+        const temperature = parseWeatherData(data);
+        console.log(temperature);
+        setTemp(temperature);
+      })
+      .catch((error) => {
+        console.error("Error fetching weather data:", error);
+      });
   }, []);
   console.log(temp);
 
@@ -46,7 +56,11 @@ function App() {
       <Main weatherTemp={temp} onSelectedCard={handleSelectedCard} />
       <Footer />
       {activeModal === "create" && (
-        <ModalWithForm title="New Garment" onClose={handleCloseModal}>
+        <ModalWithForm
+          title="New Garment"
+          onClose={handleCloseModal}
+          buttontext="Add garment"
+        >
           <div className="modal__overlay">
             <label className="modal__input-label">
               name{" "}
@@ -80,7 +94,7 @@ function App() {
                   id="hot"
                   value="hot"
                 />
-                <label> Hot </label>
+                <label> hot </label>
               </div>
               <div>
                 <input

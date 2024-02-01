@@ -1,10 +1,11 @@
 .header {
-  background-color: lightgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
   padding: 0 20px;
+  font-family: "CabinetGrotesk", sans-serif;
+  font-weight: 700;
 }
 
 .header__logo {
@@ -12,12 +13,12 @@
   gap: 20px;
   align-items: center;
 }
+
 .header__avatar-logo {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-
 .header__dateTime {
   display: flex;
   gap: 20px;
@@ -30,9 +31,8 @@
 }
 
 .header__clothes-button {
-  background-color: lightgreen;
-  color: black;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  background-color: white;
+  font-family: "CabinetGrotesk", sans-serif;
+  font-weight: 700;
 }
