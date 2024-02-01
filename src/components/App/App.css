@@ -15,9 +15,7 @@
 .modal__buttons {
   justify-content: space-between;
 }
-/* .modal__overlay {
-  opacity: 0.5;
-} */
+
 .input__button {
   margin-right: 10px;
   margin-top: 8px;

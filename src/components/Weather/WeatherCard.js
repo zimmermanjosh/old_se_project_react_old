@@ -19,8 +19,6 @@ const WeatherCard = ({ day, type, weatherTemp }) => {
       </section>
     );
   }
-  // Handle the case when imageSrc is not found or 'url' is not available.
-  // You can return a placeholder or an error message here.
 };
 
 export default WeatherCard;

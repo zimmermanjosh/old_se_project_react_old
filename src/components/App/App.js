@@ -16,6 +16,11 @@ function App() {
   const [temp, setTemp] = useState(0);
   const [image, setImage] = useState("");
 
+  const handleOnChange = (imageValue) => {
+    console.log("imageValue", imageValue);
+    setImage(imageValue);
+  };
+
   const handleCreateModal = () => {
     setActiveModal("create");
   };

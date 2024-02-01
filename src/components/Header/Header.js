@@ -5,7 +5,7 @@ import logoImage from "../../images/dashboard/logo.svg";
 import avatarImage from "../../images/dashboard/avatar.svg";
 
 const Header = ({ onCreateModal }) => {
-  console.log("Header");
+  //console.log("Header");
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
