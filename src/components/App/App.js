@@ -94,7 +94,7 @@ function App() {
                   id="hot"
                   value="hot"
                 />
-                <label> Hot </label>
+                <label> hot </label>
               </div>
               <div>
                 <input

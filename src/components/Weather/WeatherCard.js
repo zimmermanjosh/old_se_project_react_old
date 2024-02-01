@@ -1,7 +1,7 @@
 import "./WeatherCard.css";
 import { weatherOptions } from "../../utils/Constants.js";
 
-const WeatherCard = ({ day, type, weatherTemp }) => {
+const WeatherCard = ({ weatherTemp, day, type }) => {
   const imageSrc = weatherOptions.find((item) => {
     return item.day === day && item.type === type;
   });
