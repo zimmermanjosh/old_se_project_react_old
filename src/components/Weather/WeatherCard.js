@@ -10,7 +10,7 @@ const WeatherCard = ({ weatherTemp, day, type }) => {
     const imageSrcUrl = imageSrc.url || ""; // Added a check here
     return (
       <section className="weather" id="weather">
-        <div className="weather__info">{weatherTemp} F</div>
+        <div className="weather__info">{weatherTemp} Fº</div>
         <img
           src={imageSrcUrl}
           alt="weather display"
