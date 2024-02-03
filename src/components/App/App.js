@@ -56,11 +56,7 @@ function App() {
       <Main weatherTemp={temp} onSelectedCard={handleSelectedCard} />
       <Footer />
       {activeModal === "create" && (
-        <ModalWithForm
-          title="New Garment"
-          onClose={handleCloseModal}
-          buttonText="Add garment"
-        >
+        <ModalWithForm title="New Garment" onClose={handleCloseModal}>
           <div className="modal__overlay">
             <label className="modal__input-label">
               name{" "}
