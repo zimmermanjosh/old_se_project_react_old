@@ -59,7 +59,6 @@ function App() {
         <ModalWithForm title="New Garment" onClose={handleCloseModal}>
           <div className="modal__overlay">
             <label className="modal__input-label">
-              name{" "}
               <input
                 className="modal__input"
                 type="text"

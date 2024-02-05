@@ -12,7 +12,7 @@ const ModalWithForm = ({ children, buttonText, title, onClose, name }) => {
           className="modal__close-button"
         ></button>
         <h3>{title}</h3>
-        <form className="modal__form" buttonText="Add garment">
+        <form className="modal__form">
           {children}
           <button type="submit" className="submit__button">
             {buttonText}
